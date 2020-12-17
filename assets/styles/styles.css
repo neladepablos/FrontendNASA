@@ -226,6 +226,11 @@ body {
     transition: all .3s ease;
 }
 
+#error {
+    color: red;
+    font-weight: bold;
+}
+
 
 /* ------------------------------------- FOOTER ----------------------- */
 
