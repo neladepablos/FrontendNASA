@@ -22,9 +22,25 @@ console.log(inputDate);
 button.addEventListener('click', () => {
     if (inputDate.value == '') {
         error.innerHTML = 'La fecha ingresada no es vàlida';
-        
+
     } else {
-         error.innerHTML = `No se encntro imagen para la fecha: ${inputDate.value}`;   
+        error.innerHTML = `No se encntro imagen para la fecha: ${inputDate.value}`;
 
     }
 })
+
+// ----------------- Eventos
+let verBoton = document.querySelector('#verMas-btn');
+let verParrafo = document.querySelector('#verMas-text');
+
+verBoton.addEventListener('click', verMas);
+
+function verMas() {
+    verParrafo.classList.toggle('display-none');
+
+    if (verBoton.textContent == 'Ver mas') {
+        verBoton.textContent = 'Ver menos';
+    } else {
+        verBoton.textContent = 'Ver mas';
+    }
+}
