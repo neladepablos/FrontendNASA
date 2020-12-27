@@ -29,7 +29,7 @@ button.addEventListener('click', () => {
     }
 })
 
-// ----------------- Eventos
+// --------------------------------------------------------------- Eventos
 let verBoton = document.querySelector('#verMas-btn');
 let verParrafo = document.querySelector('#verMas-text');
 
@@ -44,3 +44,9 @@ function verMas() {
         verBoton.textContent = 'Ver mas';
     }
 }
+
+// ------------------------------------- gallery
+
+window.addEventListener('load', function() {
+    baguetteBox.run('.gallery');
+});

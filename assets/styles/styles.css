@@ -208,29 +208,29 @@ body {
     display: none;
 }
 
-.main .gallery {
+.main .gallery-container {
     overflow: hidden;
 }
 
-.main .gallery h3 {
+.main .gallery-container h3 {
     font-size: 40px;
     font-weight: bold;
 }
 
-.main .gallery .photo-gallery {
+.main .gallery-container .photo-gallery {
     width: 25%;
     float: left;
     /* height: 200px; */
 }
 
-.main .gallery .photo-gallery img {
+.main .gallery-container .photo-gallery img {
     width: 100%;
     vertical-align: top;
     object-fit: cover;
     opacity: .8;
 }
 
-.main .gallery .photo-gallery:hover img {
+.main .gallery-container .photo-gallery:hover img {
     opacity: 1;
     cursor: pointer;
     transition: all .3s ease;
