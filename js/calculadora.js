@@ -1,10 +1,18 @@
+let sol = document.querySelector('#sol');
+let mercurio = document.querySelector('#mercurio');
+let venus = document.querySelector('#venus');
+let marte = document.querySelector('#marte');
+let jupiter = document.querySelector('#jupiter');
+let saturno = document.querySelector('#saturno');
+let urano = document.querySelector('#urano');
+let neptuno = document.querySelector('#neptuno');
 let operandoA;
 let operandoB;
 let operacion;
 
-function init() {
-    //variables
 
+function init() {
+    //-------------------- variables
     let resultado = document.getElementById("resultado");
     let reset = document.getElementById("reset");
     let siete = document.getElementById("siete");
@@ -61,45 +69,77 @@ function init() {
 
 
     igual.onclick = function(e) {
-        operandoB = resultado.textContent;
         resolver();
     }
 }
 
-function limpiar() {
-    resultado.textContent = "";
-}
+// function limpiar() {
+//     resultado.textContent = "";
+// }
 
 function resetear() {
     resultado.textContent = "";
-    operandoA = 0;
-    operandoB = 0;
-    operacion = "";
+    // operandoA = 0;
+    // operandoB = 0;
+    // operacion = "";
+
+    sol.value = "";
+    mercurio.value = "";
+    venus.value = "";
+    marte.value = "";
+    jupiter.value = "";
+    saturno.value = "";
+    urano.value = "";
+    neptuno.value = "";
 }
+
 
 function resolver() {
-    let res = 0;
+    let res = '';
+    let gravedadSol = 274;
+    let gravedadMercurio = 3.7;
+    let gravedadVenus = 8.87;
+    let gravedadMarte = 3.711;
+    let gravedadJupiter = 24.79;
+    let gravedadSaturno = 10.44;
+    let gravedadUrano = 8.87;
+    let gravedadNeptuno = 11.15;
+
+    /*=========================================================================================Por borrar
+    // pesoTierra = resultado.innerHTML;
+    // pesoSol = `${ gravedadSol * pesoTierra / gravedadTierra } m/s`;
+
+    // pesoMercurio = `${ gravedadMercurio * pesoTierra / gravedadTierra } m/s`;
 
 
-    switch (planeta) {
-        case "mercurio":
-            res = parseFloat(operandoA) * parseFloat(operandoB) / 9.8;
-            break;
+    // resetear();
 
-        case "venus":
-            res = parseFloat(operandoA) * parseFloat(operandoB) / 9.8;
-            break;
 
-        case "marte":
-            res = parseFloat(operandoA) * parseFloat(operandoB) / 9.8;
-            break;
+    // resultado.textContent = res; 
+    =======================================================================================================*/
 
-        case "jupiter":
-            res = parseFloat(operandoA) * parseFloat(operandoB) / 9.8;
-            break;
 
-    }
+    sol.value = calcularPeso(gravedadSol);
+    mercurio.value = calcularPeso(gravedadMercurio);
+    venus.value = calcularPeso(gravedadVenus);
+    marte.value = calcularPeso(gravedadMarte);
+    jupiter.value = calcularPeso(gravedadJupiter);
+    saturno.value = calcularPeso(gravedadSaturno);
+    urano.value = calcularPeso(gravedadUrano);
+    neptuno.value = calcularPeso(gravedadNeptuno);
 
-    resetear();
-    resultado.textContent = res;
 }
+
+function calcularPeso(gravedad) {
+    let gravedadTierra = 9.8;
+    pesoTierra = resultado.innerHTML;
+    peso = gravedad * pesoTierra / gravedadTierra;
+    pesoResult = `${peso.toFixed(2) } kg`;
+    return pesoResult;
+
+}
+
+// ======================================================== jQuery
+$(document).ready(function() {
+    $('.hidden-planet').fadeIn(3000)
+});

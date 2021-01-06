@@ -15,6 +15,23 @@ body {
 }
 
 
+/* GENERAL */
+
+:root {
+    --blue: #1e90ff;
+    --white: #ffffff;
+    --gray: #ccc;
+}
+
+.color-gray {
+    color: var(--gray);
+}
+
+.bold {
+    font-weight: bold;
+}
+
+
 /*-------------------------HEADER----------------------------------*/
 
 .header {
@@ -274,6 +291,30 @@ body {
     background-size: cover;
     background-attachment: fixed;
     background-position: center 0;
+    display: flex;
+    justify-content: space-between;
+    /* align-items: center; */
+}
+
+.body-calculadora .planets {
+    margin: auto;
+}
+
+.body-calculadora .planets .hidden-planet {
+    display: none;
+}
+
+.body-calculadora .planets .img-contenedor-planeta {
+    margin-bottom: 20px;
+    display: flex;
+    align-items: center;
+    /* border-radius: 100px; */
+}
+
+.body-calculadora .planets img {
+    width: 100px;
+    height: 85px;
+    border-radius: 100px;
 }
 
 .wrapper {
@@ -288,7 +329,7 @@ body {
     box-shadow: 2px 3px 4px black;
     border: 3px solid black;
     border-radius: 25px;
-    margin: 30px auto;
+    /* margin: 30px auto; */
 }
 
 .wrapper h1 {
@@ -317,7 +358,7 @@ body {
     height: 65px;
     padding: 15px;
     border: 2px solid black;
-    font-size: 30px;
+    font-size: 24px;
     font-weight: bold;
     line-height: 50px;
     background: #fff;
@@ -367,6 +408,646 @@ body {
         box-shadow: 2px 3px 4px black;
         border: 3px solid black;
         border-radius: 25px;
+    }
+}
+
+#box {
+    background-color: rgba(17, 17, 17, 0.8);
+    width: 1350px;
+    height: 1200px;
+    position: relative;
+    top: 0%;
+    left: 15%;
+    z-index: 6;
+}
+
+h2 {
+    color: #FFFFFF;
+    font-size: 35px;
+    text-shadow: 0 0 20px #FF44EE;
+    /*text-decoration: underline;*/
+}
+
+.star {
+    background-color: #FFFFFF;
+    background: radial-gradient(#FFFFFF, transparent);
+    width: 9px;
+    height: 9px;
+    border-radius: 100px;
+    position: absolute;
+}
+
+.est {
+    background: #FFFFFF;
+    border-radius: 100px;
+    width: 2px;
+    height: 2px;
+    position: relative;
+}
+
+.const {
+    border-style: double;
+    border-width: 3px;
+    border-color: #331144;
+}
+
+
+/* ================================ */
+
+
+/* ------- CONSTELACIONES --------- */
+
+
+/* ================================ */
+
+
+/* ----------- ORION ------------- */
+
+#orion {
+    background: url("https://i.imgur.com/nm2aQtp.png") no-repeat;
+    display: inline-block;
+    width: 495px;
+    height: 620px;
+    position: relative;
+    top: 15px;
+    left: 15px;
+    transition: all 2s linear;
+}
+
+#orion:hover {
+    background: url("https://i.imgur.com/Al1t8IW.png") no-repeat;
+    transition: all 2s linear;
+}
+
+
+/* ================================ */
+
+
+/* ---------- ESTRELLAS ----------- */
+
+
+/* ================================ */
+
+
+/* ----------- ORION ------------- */
+
+#O1 {
+    top: 558px;
+    left: 125px;
+}
+
+#O2 {
+    top: 555px;
+    left: 270px;
+}
+
+#O3 {
+    top: 420px;
+    left: 170px;
+}
+
+#O4 {
+    top: 415px;
+    left: 200px;
+}
+
+#O5 {
+    top: 400px;
+    left: 230px;
+}
+
+#O6 {
+    top: 270px;
+    left: 150px;
+}
+
+#O7 {
+    top: 240px;
+    left: 250px;
+}
+
+#O8 {
+    top: 310px;
+    left: 290px;
+}
+
+#O9 {
+    top: 225px;
+    left: 125px;
+}
+
+#O10 {
+    top: 125px;
+    left: 100px;
+}
+
+#O11 {
+    top: 120px;
+    left: 125px;
+}
+
+#O12 {
+    top: 50px;
+    left: 165px;
+}
+
+#O13 {
+    top: 30px;
+    left: 205px;
+}
+
+#O14 {
+    top: 330px;
+    left: 425px;
+}
+
+#O15 {
+    top: 300px;
+    left: 430px;
+}
+
+#O16 {
+    top: 275px;
+    left: 415px;
+}
+
+#O17 {
+    top: 360px;
+    left: 415px;
+}
+
+#O18 {
+    top: 400px;
+    left: 390px;
+}
+
+#O19 {
+    top: 420px;
+    left: 375px;
+}
+
+
+/* ================================ */
+
+
+/* ----------- ESTELAS ------------ */
+
+
+/* ================================ */
+
+
+/* ----------- ORION ------------- */
+
+#est_O1 {
+    top: 562px;
+    left: 128px;
+    transform: rotate(-1.5deg);
+    transform-origin: 0%;
+    animation: anim_estO1 18s linear infinite;
+}
+
+#est_O2 {
+    top: 562px;
+    left: 128px;
+    transform: rotate(-71.5deg);
+    transform-origin: 0%;
+    animation: anim_estO2 18s linear infinite;
+}
+
+#est_O3 {
+    top: 555px;
+    left: 275px;
+    transform: rotate(-104deg);
+    transform-origin: 0%;
+    animation: anim_estO3 18s linear 2s infinite;
+}
+
+#est_O4 {
+    top: 419px;
+    left: 175px;
+    transform: rotate(-11deg);
+    transform-origin: 0%;
+    animation: anim_estO4 18s linear 2s infinite;
+}
+
+#est_O5 {
+    top: 411px;
+    left: 205px;
+    transform: rotate(-27deg);
+    transform-origin: 0%;
+    animation: anim_estO5 18s linear 3s infinite;
+}
+
+#est_O6 {
+    top: 415px;
+    left: 175px;
+    transform: rotate(-97.5deg);
+    transform-origin: 0%;
+    animation: anim_estO6 18s linear 2s infinite;
+}
+
+#est_O7 {
+    top: 392px;
+    left: 235px;
+    transform: rotate(-56deg);
+    transform-origin: 0%;
+    animation: anim_estO7 18s linear 4s infinite;
+}
+
+#est_O8 {
+    top: 260px;
+    left: 155px;
+    transform: rotate(-16.5deg);
+    transform-origin: 0%;
+    animation: anim_estO8 18s linear 6s infinite;
+}
+
+#est_O9 {
+    top: 298px;
+    left: 295px;
+    transform: rotate(-120deg);
+    transform-origin: 0%;
+    animation: anim_estO9 18s linear 6s infinite;
+}
+
+#est_O10 {
+    top: 257px;
+    left: 154px;
+    transform: rotate(-118deg);
+    transform-origin: 0%;
+    animation: anim_estO10 18s linear 5.9s infinite;
+}
+
+#est_O11 {
+    top: 210px;
+    left: 129px;
+    transform: rotate(-90deg);
+    transform-origin: 0%;
+    animation: anim_estO11 18s linear 7.8s infinite;
+}
+
+#est_O12 {
+    top: 208px;
+    left: 129px;
+    transform: rotate(-103.5deg);
+    transform-origin: 0%;
+    animation: anim_estO12 18s linear 7.8s infinite;
+}
+
+#est_O13 {
+    top: 105px;
+    left: 105px;
+    transform: rotate(-10deg);
+    transform-origin: 0%;
+    animation: anim_estO13 18s linear 9.5s infinite;
+}
+
+#est_O14 {
+    top: 99px;
+    left: 128px;
+    transform: rotate(-48deg);
+    transform-origin: 0%;
+    animation: anim_estO14 18s linear 9.8s infinite;
+}
+
+#est_O15 {
+    top: 103px;
+    left: 104px;
+    transform: rotate(-49deg);
+    transform-origin: 0%;
+    animation: anim_estO15 18s linear 9.8s infinite;
+}
+
+#est_O16 {
+    top: 285px;
+    left: 295px;
+    transform: rotate(8deg);
+    transform-origin: 0%;
+    animation: anim_estO16 18s linear 6s infinite;
+}
+
+#est_O17 {
+    top: 302px;
+    left: 429px;
+    transform: rotate(108deg);
+    transform-origin: 0%;
+    animation: anim_estO17 18s linear 8s infinite;
+}
+
+#est_O18 {
+    top: 302px;
+    left: 429px;
+    transform: rotate(-79deg);
+    transform-origin: 0%;
+    animation: anim_estO18 18s linear 8s infinite;
+}
+
+#est_O19 {
+    top: 330px;
+    left: 419px;
+    transform: rotate(122deg);
+    transform-origin: 0%;
+    animation: anim_estO19 18s linear 9.5s infinite;
+}
+
+#est_O20 {
+    top: 268px;
+    left: 435px;
+    transform: rotate(-120deg);
+    transform-origin: 0%;
+    animation: anim_estO20 18s linear 10.3s infinite;
+}
+
+#est_O21 {
+    top: 365px;
+    left: 394px;
+    transform: rotate(125deg);
+    transform-origin: 0%;
+    animation: anim_estO21 18s linear 11.2s infinite;
+}
+
+
+/* ================================ */
+
+
+/* --------- Animaciones ---------- */
+
+
+/* ================================ */
+
+
+/* ----------- ORION ------------- */
+
+@keyframes anim_estO1 {
+    0% {
+        width: 0.5px;
+    }
+    11%,
+    99% {
+        width: 145px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO2 {
+    0% {
+        width: 0.5px;
+    }
+    11.5%,
+    99% {
+        width: 148px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO3 {
+    0% {
+        width: 0.5px;
+    }
+    11.2%,
+    99% {
+        width: 161px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO4 {
+    0% {
+        width: 0.5px;
+    }
+    6%,
+    99% {
+        width: 30px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO5 {
+    0% {
+        width: 0.5px;
+    }
+    6.16%,
+    99% {
+        width: 35px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO6 {
+    0% {
+        width: 0.5px;
+    }
+    22%,
+    99% {
+        width: 153px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO7 {
+    0% {
+        width: 0.5px;
+    }
+    11%,
+    99% {
+        width: 110px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO8 {
+    0% {
+        width: 0.5px;
+    }
+    12%,
+    99% {
+        width: 105px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO9 {
+    0% {
+        width: 0.5px;
+    }
+    12%,
+    99% {
+        width: 80px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO10 {
+    0% {
+        width: 0.5px;
+    }
+    11%,
+    99% {
+        width: 53px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO11 {
+    0% {
+        width: 0.5px;
+    }
+    11.5%,
+    99% {
+        width: 108px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO12 {
+    0% {
+        width: 0.5px;
+    }
+    11.5%,
+    99% {
+        width: 105px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO13 {
+    0% {
+        width: 0.5px;
+    }
+    15%,
+    99% {
+        width: 25px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO14 {
+    0% {
+        width: 0.5px;
+    }
+    18%,
+    99% {
+        width: 123px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO15 {
+    0% {
+        width: 0.5px;
+    }
+    18%,
+    99% {
+        width: 100px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO16 {
+    0% {
+        width: 0.5px;
+    }
+    11%,
+    99% {
+        width: 138px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO17 {
+    0% {
+        width: 0.5px;
+    }
+    9%,
+    99% {
+        width: 34px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO18 {
+    0% {
+        width: 0.5px;
+    }
+    14%,
+    99% {
+        width: 32px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO19 {
+    0% {
+        width: 0.5px;
+    }
+    11%,
+    99% {
+        width: 48px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO20 {
+    0% {
+        width: 0.5px;
+    }
+    16%,
+    99% {
+        width: 30px;
+    }
+    100% {
+        background-color: transparent;
+    }
+}
+
+@keyframes anim_estO21 {
+    0% {
+        width: 0.5px;
+    }
+    12%,
+    99% {
+        width: 25px;
+    }
+    100% {
+        background-color: transparent;
     }
 }
 
