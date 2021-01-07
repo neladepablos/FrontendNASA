@@ -13,7 +13,7 @@
 
 // });
 
-// --------------------------------MOdificar DOm e Incorporar eventos
+// --------------------------------Modificar DOm e Incorporar eventos
 let button = document.querySelector('#button');
 let inputDate = document.querySelector('#inputDate');
 let error = document.querySelector('#error');
@@ -45,7 +45,7 @@ function verMas() {
     }
 }
 
-// ------------------------------------- gallery
+// ---------------------------------------------------------- gallery
 
 window.addEventListener('load', function() {
     baguetteBox.run('.gallery');

@@ -79,9 +79,7 @@ function init() {
 
 function resetear() {
     resultado.textContent = "";
-    // operandoA = 0;
-    // operandoB = 0;
-    // operacion = "";
+
 
     sol.value = "";
     mercurio.value = "";
