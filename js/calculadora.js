@@ -73,9 +73,7 @@ function init() {
     }
 }
 
-// function limpiar() {
-//     resultado.textContent = "";
-// }
+
 
 function resetear() {
     resultado.textContent = "";
@@ -103,18 +101,6 @@ function resolver() {
     let gravedadUrano = 8.87;
     let gravedadNeptuno = 11.15;
 
-    /*=========================================================================================Por borrar
-    // pesoTierra = resultado.innerHTML;
-    // pesoSol = `${ gravedadSol * pesoTierra / gravedadTierra } m/s`;
-
-    // pesoMercurio = `${ gravedadMercurio * pesoTierra / gravedadTierra } m/s`;
-
-
-    // resetear();
-
-
-    // resultado.textContent = res; 
-    =======================================================================================================*/
 
 
     sol.value = calcularPeso(gravedadSol);
